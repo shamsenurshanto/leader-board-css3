@@ -1,0 +1,181 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  
+  background-color: white;
+  width: 870px;
+  padding: 12px 40px;
+  border-radius: 10px;
+  padding-right: 0;
+  margin-top: 36px;
+}
+.section-title {
+  color: #562eff;
+}
+.top-player {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  grid-row-gap: 9px;
+  margin-bottom: 21px;
+}
+.players {
+  display: flex;
+  font-family: Poppins;
+}
+.players img {
+  width: 56px;
+  height: 56px;
+}
+.player-name {
+  margin-left: 16px;
+  font-weight: 500;
+}
+hr {
+  border: 1px solid #dad7d7;
+}
+.blogs a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* blog section  */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 2px;
+}
+.blog {
+  display: flex;
+}
+a {
+  color: #562eff;
+}
+.blogs .blog img {
+  width: 224px;
+  height: 127px;
+}
+.blog-title {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+.blog-info {
+  margin: 16px;
+}
+.blog-owner {
+  color: #9f9f9f;
+  font-size: 15px;
+  font-weight: 700;
+}
+/* course section  */
+.course-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.courses {
+  width: 233px;
+  height: 301px;
+  border: 2px solid rgb(252, 248, 248);
+  border-radius: 8px;
+  /* background-color: violet; */
+  padding-left: 10px;
+  box-shadow: 2px 5px 70px rgba(212, 197, 197, 0.095);
+}
+.course-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-owner {
+  margin-right: 5px;
+}
+.course-details {
+  margin-right: 5px;
+}
+.course-details p {
+  margin-right: 5px;
+}
+
+.course-thumnail img {
+    padding-top: 20px;
+   
+  width: 224px;
+  height: 110px;
+}
+.course-duration {
+  justify-content: space-between;
+}
+.courses a {
+  text-decoration: none;
+  color: #ed6b4f;
+  font-size: 14.6913px;
+  font-weight: 100;
+}
+.filled {
+  color: #ffc014;
+}
+.non-filled {
+  color: #aeaeae;
+}
+.fa-clock span {
+  margin-left: 5px;
+}
+/* media query  */
+/* ................................  */
+/* -----------------------  */
+@media only screen and (max-width:688px) {
+    .container{
+      display: flex;
+  flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding:0;
+        margin: 0;
+     
+    }
+.players{
+    /* background-color: yellow; */
+}
+.top-player{
+    grid-template-columns: repeat(1,1fr);
+    margin: 0;
+    padding:0;
+    margin: 0;
+}
+.blogs{
+  grid-template-columns: repeat(1,1fr);
+  margin: 0;
+  padding:0;
+  margin: 0;
+}
+.blog img{
+  width: 80%;
+}
+.courses{
+  
+}
+.course-container{
+  grid-template-columns: repeat(1,1fr);
+ 
+  justify-content: center;
+  align-items: center;
+  
+}
+.blog-info{
+  margin-right: 0;
+  margin-left: 2px;
+}
+
+}
